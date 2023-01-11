@@ -3,7 +3,7 @@
   <p>One of Ignite's Node.js trail challenge</p>
   <nav>
     <div id="repository-buttons"/>
-    <a class="navigation-link disabled" href="https://github.com/L-Marcel/ignite-03-nodejs-tests-challenge/blob/main/README.md" target="__blank__">
+    <a class="navigation-link disabled" href="https://github.com/L-Marcel/ignite-04-nodejs-tests-challenge/blob/main/README.md" target="__blank__">
       pt-br
     </a>
   </nav>
