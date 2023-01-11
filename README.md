@@ -19,7 +19,7 @@
       <li id="checked"><p>Registrar novo usuário;</p></li>
       <li id="checked"><p>Autenticar usuário;</p></li>
       <li id="checked"><p>Retornar informações do usuário autenticado;</p></li>
-      <li id="checked"><p>Criar um extrats de entrada ou saída de dinheiro;</p></li>
+      <li id="checked"><p>Criar uma operação de entrada ou saída de dinheiro;</p></li>
       <li id="checked"><p>Retornar extratos e listar operações;</p></li>
       <li id="checked"><p>Retornar o registro de uma operação.</p></li>
     </ul>
