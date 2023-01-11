@@ -12,10 +12,10 @@ interface IRequest {
 @injectable()
 export class GetStatementOperationUseCase {
   constructor(
-    @inject('UsersRepository')
+    @inject("UsersRepository")
     private usersRepository: IUsersRepository,
 
-    @inject('StatementsRepository')
+    @inject("StatementsRepository")
     private statementsRepository: IStatementsRepository
   ) {}
 
@@ -29,10 +29,10 @@ export class GetStatementOperationUseCase {
     const statementOperation = await this.statementsRepository
       .findStatementOperation({ user_id, statement_id });
 
-      if(!statementOperation) {
-        throw new GetStatementOperationError.StatementNotFound();
-      }
+    if(!statementOperation) {
+      throw new GetStatementOperationError.StatementNotFound();
+    }
 
-      return statementOperation;
+    return statementOperation;
   }
 }

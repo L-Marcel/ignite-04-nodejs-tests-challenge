@@ -8,10 +8,10 @@ import { ICreateStatementDTO } from "./ICreateStatementDTO";
 @injectable()
 export class CreateStatementUseCase {
   constructor(
-    @inject('UsersRepository')
+    @inject("UsersRepository")
     private usersRepository: IUsersRepository,
 
-    @inject('StatementsRepository')
+    @inject("StatementsRepository")
     private statementsRepository: IStatementsRepository
   ) {}
 
@@ -22,11 +22,11 @@ export class CreateStatementUseCase {
       throw new CreateStatementError.UserNotFound();
     }
 
-    if(type === 'withdraw') {
+    if(type === "withdraw") {
       const { balance } = await this.statementsRepository.getUserBalance({ user_id });
 
       if (balance < amount) {
-        throw new CreateStatementError.InsufficientFunds()
+        throw new CreateStatementError.InsufficientFunds();
       }
     }
 

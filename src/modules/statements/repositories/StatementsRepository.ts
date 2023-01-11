@@ -45,20 +45,20 @@ export class StatementsRepository implements IStatementsRepository {
     });
 
     const balance = statement.reduce((acc, operation) => {
-      if (operation.type === 'deposit') {
+      if (operation.type === "deposit") {
         return acc + operation.amount;
       } else {
         return acc - operation.amount;
       }
-    }, 0)
+    }, 0);
 
     if (with_statement) {
       return {
         statement,
         balance
-      }
+      };
     }
 
-    return { balance }
+    return { balance };
   }
 }

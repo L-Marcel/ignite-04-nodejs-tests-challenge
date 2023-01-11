@@ -17,10 +17,10 @@ interface IResponse {
 @injectable()
 export class GetBalanceUseCase {
   constructor(
-    @inject('StatementsRepository')
+    @inject("StatementsRepository")
     private statementsRepository: IStatementsRepository,
 
-    @inject('UsersRepository')
+    @inject("UsersRepository")
     private usersRepository: IUsersRepository,
   ) {}
 

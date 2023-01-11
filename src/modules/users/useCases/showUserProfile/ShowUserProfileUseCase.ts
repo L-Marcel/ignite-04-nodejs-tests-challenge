@@ -6,7 +6,7 @@ import { ShowUserProfileError } from "./ShowUserProfileError";
 @injectable()
 export class ShowUserProfileUseCase {
   constructor(
-    @inject('UsersRepository')
+    @inject("UsersRepository")
     private usersRepository: IUsersRepository,
   ) {}
 

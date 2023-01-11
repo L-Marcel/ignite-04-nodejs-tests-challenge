@@ -8,6 +8,6 @@ export class ProfileMap {
       email,
       created_at,
       updated_at
-    }
+    };
   }
 }

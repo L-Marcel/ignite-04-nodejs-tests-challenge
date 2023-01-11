@@ -23,6 +23,6 @@ export class BalanceMap {
     return {
       statement: parsedStatement,
       balance: Number(balance)
-    }
+    };
   }
 }

@@ -1,7 +1,7 @@
-import { Request, Response } from 'express';
-import { container } from 'tsyringe';
+import { Request, Response } from "express";
+import { container } from "tsyringe";
 
-import { GetStatementOperationUseCase } from './GetStatementOperationUseCase';
+import { GetStatementOperationUseCase } from "./GetStatementOperationUseCase";
 
 export class GetStatementOperationController {
   async execute(request: Request, response: Response) {

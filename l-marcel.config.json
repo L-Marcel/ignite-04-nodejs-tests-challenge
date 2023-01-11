@@ -1,0 +1,9 @@
+{
+  "translatedDescription": "Uma série de testes unitários de uma aplicação que realiza extratos de deposito e saque de dinheiro.",
+  "technologies": [
+    "Node.js",
+    "Express",
+    "Eslint",
+    "Jest"
+  ]
+}

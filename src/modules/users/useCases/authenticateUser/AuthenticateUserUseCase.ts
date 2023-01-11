@@ -1,8 +1,8 @@
 import { inject, injectable } from "tsyringe";
-import { compare } from 'bcryptjs';
-import { sign } from 'jsonwebtoken';
+import { compare } from "bcryptjs";
+import { sign } from "jsonwebtoken";
 
-import authConfig from '../../../../config/auth';
+import authConfig from "../../../../config/auth";
 
 import { IUsersRepository } from "../../repositories/IUsersRepository";
 import { IAuthenticateUserResponseDTO } from "./IAuthenticateUserResponseDTO";
@@ -16,7 +16,7 @@ interface IRequest {
 @injectable()
 export class AuthenticateUserUseCase {
   constructor(
-    @inject('UsersRepository')
+    @inject("UsersRepository")
     private usersRepository: IUsersRepository,
   ) {}
 
@@ -47,6 +47,6 @@ export class AuthenticateUserUseCase {
         email: user.email
       },
       token
-    }
+    };
   }
 }
